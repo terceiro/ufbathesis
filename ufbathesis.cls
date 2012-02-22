@@ -12,7 +12,7 @@
 %%%    Date                = "22 Feb 2012",
 %%%    Filename            = "ufbathesis.cls",
 %%%    Address             = "Universidade Federal da Bahia
-%%%                           Instituto de Matemática",
+%%%                           Instituto de Matematica",
 %%%    Telephone           = "+55 71 3283-6292",
 %%%    Email               = "terceiro@dcc.ufba.br",
 %%%    Keywords            = "LaTeX, Thesis, Dissertation",
@@ -128,9 +128,9 @@
 \gdef\@femaleadvisertitle{Orientadora}
 \gdef\@malecoadvisertitle{Co-orientador}
 \gdef\@femalecoadvisertitle{Co-orientadora}
-\gdef\@bachelordissertation{Trabalho de Graduação}
-\gdef\@mastersdissertation{Dissertação de Mestrado}
-\gdef\@phdqualifying{Monografia de Qualificação}
+\gdef\@bachelordissertation{Trabalho de Gradua\c{c}\~{a}o}
+\gdef\@mastersdissertation{Disserta\c{c}\~{a}o de Mestrado}
+\gdef\@phdqualifying{Monografia de Qualifica\c{c}\~{a}o}
 \gdef\@phdproposal{Proposta de Tese de Doutorado}
 \gdef\@phdthesis{Tese de Doutorado}
 \gdef\@bachelordegree{Bacharel}
@@ -139,7 +139,7 @@
 \gdef\@presentationtext{%
 Trabalho apresentado ao Programa de
 \@program\ do \if\@showdepartment1\@department\ \else\@institute\ \fi
-da \@university\ como requisito parcial para obtenção do
+da \@university\ como requisito parcial para obten\c{c}\~{a}o do
 grau de \@degree\ em \@majorfield.}
 \gdef\resumoname{Resumo}
 \gdef\abstrname{Abstract}
@@ -150,23 +150,23 @@ grau de \@degree\ em \@majorfield.}
 
 % Portuguese
 \if\@language0
-  \gdef\@notdefined{NÃO DEFINIDO}
+  \gdef\@notdefined{N\~{A}O DEFINIDO}
   \gdef\acknowledgementsname{Agradecimentos}
   \gdef\@axiomname{Axioma}
   \gdef\@conjecturename{Conjectura}
-  \gdef\@defname{Definição}
+  \gdef\@defname{Defini\c{c}\~{a}o}
   \gdef\@lemmaname{Lema}
   \gdef\@theoname{Teorema}
-  \gdef\@propname{Proposição}
-  \gdef\@corname{Corolário}
+  \gdef\@propname{Proposi\c{c}\~{a}o}
+  \gdef\@corname{Corol\'{a}rio}
   \gdef\@proofname{Prova}
   \gdef\@figurename{Figura}
   \gdef\@tablename{Tabela}
-  \gdef\@equationame{equação}
-  \gdef\@chaptername{Capítulo}
-  \gdef\@sectionname{Seção}
-  \gdef\@appendixname{Apêndice}
-  \gdef\@pagename{página}
+  \gdef\@equationame{equa\c{c}\~{a}o}
+  \gdef\@chaptername{Cap\~{i}tulo}
+  \gdef\@sectionname{Se\c{c}\~{a}o}
+  \gdef\@appendixname{Ap\^{e}ndice}
+  \gdef\@pagename{p\'{a}gina}
   \gdef\@colophontext{%
   \urlstyle{rm}%
   Este volume foi tipografado em \LaTeX\ na classe \textsf{UFBAThesis}
@@ -717,7 +717,7 @@ grau de \@degree\ em \@majorfield.}
 	{0pt}% Heading indent amount
 	{\bfseries}{.}% Heading font and punctuation after it
 	{1ex plus 0pt minus .2ex}% Space after heading 
-	{}% Head spec (empty = same as ‘plain’ style
+	{}% Head spec (empty = same as "plain" style
 \theoremstyle{definition}
 \newtheorem{Def}{\@defname}[chapter]
 \theoremstyle{theo}
@@ -1198,7 +1198,7 @@ grau de \@degree\ em \@majorfield.}
 	{0pt}% Heading indent amount
 	{\bfseries}{.}% Heading font and punctuation after it
 	{1ex plus 0pt minus .2ex}% Space after heading 
-	{}% Head spec (empty = same as ‘plain’ style
+	{}% Head spec (empty = same as "plain" style
 \theoremstyle{definition}
 \newtheorem{Def}{\@defname}[chapter]
 \theoremstyle{theo}

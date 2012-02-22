@@ -213,7 +213,7 @@ grau de \@degree\ em \@majorfield.}
   \gdef\@university{#1}}
 \def\@university{Universidade Federal de Pernambuco}
 
-\def\universitylogo{ufpelogo.tex}
+\def\universitylogo{ufbalogo.tex}
 
 \let\@showinstitute=0
 \def\institute#1{%

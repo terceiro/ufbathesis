@@ -1,28 +1,28 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% ufpehesis.cls
+%%% ufbahesis.cls
 %%% UFPE Thesis/Dissertation document class
 %%% (C) 2003--2005 Paulo Gustavo Soares Fonseca
+%%% (C) 2012 Antonio Terceiro
 %%% THIS FILE COMES WITH NO WARRANTIES
 %%% PERMISSION TO COPY AND REDISTRIBUTE FREE OF CHARGE
 %%% FOR ACADEMIC PURPOSES ONLY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%    Author              = "Paulo G. S. Fonseca",
 %%%    Version             = "0.9.2",
-%%%    Date                = "29 Jan 2006",
-%%%    Filename            = "ufpethesis.cls",
-%%%    Address             = "Universidade Federal de Pernambuco
-%%%                           Centro de Informática",
-%%%    Telephone           = "+55 81 2126-8430",
-%%%    Email               = "paguso@cin.ufpe.br",
+%%%    Date                = "22 Feb 2012",
+%%%    Filename            = "ufbathesis.cls",
+%%%    Address             = "Universidade Federal da Bahia
+%%%                           Instituto de Matemática",
+%%%    Telephone           = "+55 71 3283-6292",
+%%%    Email               = "terceiro@dcc.ufba.br",
 %%%    Keywords            = "LaTeX, Thesis, Dissertation",
 %%%    Abstract            = "LaTeX document-style for typesetting of
 %%%                           Monographs, Theses and Dissertations at the
-%%%                           Federal University of Pernambuco - Brazil"
+%%%                           Federal University of Bahia - Brazil"
 %%%    SeeAlso             = "book.sty",
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ProvidesClass{ufpethesis}[2006/29/01]
-\input{aboutufpethesis.txt}
+\ProvidesClass{ufbathesis}[2012/02/22]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% OPTIONS 
@@ -169,8 +169,8 @@ grau de \@degree\ em \@majorfield.}
   \gdef\@pagename{página}
   \gdef\@colophontext{%
   \urlstyle{rm}%
-  Este volume foi tipografado em \LaTeX\ na classe \textsf{UFPEThesis}
-  (\url{www.cin.ufpe.br/~paguso/ufpethesis}).
+  Este volume foi tipografado em \LaTeX\ na classe \textsf{UFBAThesis}
+  (\url{www.dcc.ufba.br/~terceiro/ufbathesis}).
   \if\@scr1
   Para detalhes sobre este documento, clique \Acrobatmenu{GeneralInfo}{aqui}.
   \fi}
@@ -195,8 +195,8 @@ grau de \@degree\ em \@majorfield.}
   \gdef\@pagename{page}
   \gdef\@colophontext{%
   \urlstyle{rm}%
-  This volume has been typeset in \LaTeX with the \textsf{UFPEThesis} class
-  (\url{www.cin.ufpe.br/~paguso/ufpethesis}).
+  This volume has been typeset in \LaTeX with the \textsf{UFBAThesis} class
+  (\url{www.dcc.ufba.br/~terceiro/ufbathesis}).
   \if\@scr1
   For details about this document, click \Acrobatmenu{GeneralInfo}{here}. 
   \fi}
@@ -211,7 +211,7 @@ grau de \@degree\ em \@majorfield.}
 
 \def\university#1{%
   \gdef\@university{#1}}
-\def\@university{Universidade Federal de Pernambuco}
+\def\@university{Universidade Federal da Bahia}
 
 \def\universitylogo{ufbalogo.tex}
 
@@ -235,7 +235,7 @@ grau de \@degree\ em \@majorfield.}
 
 \def\address#1{%
   \gdef\@address{#1}}
-\def\@address{Recife}
+\def\@address{Salvador}
 
 %% Authors identification
 

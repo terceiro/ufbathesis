@@ -85,7 +85,6 @@
 \RequirePackage{babel}
 \RequirePackage{calc}
 \RequirePackage{ifthen}
-\RequirePackage[latin1]{inputenc}
 \RequirePackage{textcase}
 \RequirePackage{textcomp}
 \RequirePackage{url}

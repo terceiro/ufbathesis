@@ -212,8 +212,6 @@ grau de \@degree\ em \@majorfield.}
   \gdef\@university{#1}}
 \def\@university{Universidade Federal da Bahia}
 
-\def\universitylogo{ufbalogo.tex}
-
 \let\@showinstitute=0
 \def\institute#1{%
   \let\@showinstitute=1
@@ -772,7 +770,7 @@ grau de \@degree\ em \@majorfield.}
   \if@openright\cleardoublepage\else\clearpage\fi
   \thispagestyle{empty}
   \begin{center}
-  \input\universitylogo
+  \includegraphics[width=3cm]{ufba}
   \large
   \\\@university
   \if\@showinstitute1\\\@institute\fi

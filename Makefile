@@ -14,7 +14,7 @@ test: template.dvi template.pdf template-full.dvi template-full.pdf
 
 dist: $(TARBALL)
 
-$(TARBALL): ufbathesis.cls ufba.eps ufba.pdf
+$(TARBALL): ufbathesis.cls ufba.eps ufba.pdf abnt-alf.bst
 	tar czf $(TARBALL) $^
 
 index.html: README.md

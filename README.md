@@ -11,8 +11,9 @@ Fonseca.
 
 ## Como usar
 
-* [Baixe o pacote](ufbathesis-##VERSION##.tar.gz) da versão atual e descomprima
-  no diretório onde estão os fontes da sua tese.
+* Instale o [abnTeX](http://abntex.codigolivre.org.br/).
+* [Baixe o pacote](ufbathesis-##VERSION##.tar.gz) da versão atual do ufbathesis
+  e descomprima no diretório onde estão os fontes da sua tese.
 * Use `ufbathesis` como o `documentclass` do seu documento.
 * Tente seguir um dos modelos o mais fielmente possível:
     * Para teses de doutorado do DMCC, há um [modelo mais

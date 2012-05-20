@@ -103,7 +103,7 @@
   \RequirePackage[dvips,usenames]{color}
   \RequirePackage[dvipdfm,colorlinks,backref]{hyperref}
 \fi
-
+\RequirePackage[alf]{abntcite}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% GENERAL PURPOSE MACROS

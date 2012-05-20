@@ -7,7 +7,7 @@
 %%% PERMISSION TO COPY AND REDISTRIBUTE FREE OF CHARGE
 %%% FOR ACADEMIC PURPOSES ONLY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%    Author              = "Paulo G. S. Fonseca",
+%%%    Author              = "Paulo G. S. Fonseca and Antonio Terceiro",
 %%%    Version             = "0.9.2",
 %%%    Date                = "22 Feb 2012",
 %%%    Filename            = "ufbathesis.cls",

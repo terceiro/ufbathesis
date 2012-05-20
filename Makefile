@@ -4,12 +4,12 @@ UPLOAD_TO = app.dcc.ufba.br:~/public_html/ufbathesis/
 
 all: test
 
-test: ufbathesis.cls template.dvi template.pdf template-full.dvi template-full.pdf
+test: template.dvi template.pdf template-full.dvi template-full.pdf
 
-%.dvi: %.tex
+%.dvi: %.tex ufbathesis.cls
 	latex $<
 
-%.pdf: %.tex
+%.pdf: %.tex ufbathesis.cls
 	pdflatex $<
 
 dist: $(TARBALL)
@@ -20,7 +20,7 @@ $(TARBALL): ufbathesis.cls ufba.eps ufba.pdf
 index.html: README.md
 	(pandoc -s -f markdown -t html $< | sed -e 's/##VERSION##/$(VERSION)/g' > $@) || ($(RM) $@; false)
 
-upload: $(TARBALL) index.html template.tex
+upload: $(TARBALL) index.html template.tex template-full.tex
 	scp index.html $^ $(UPLOAD_TO)
 
 clean:

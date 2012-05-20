@@ -14,7 +14,12 @@ Fonseca.
 * [Baixe o pacote](ufbathesis-##VERSION##.tar.gz) da versão atual e descomprima
   no diretório onde estão os fontes da sua tese.
 * Use `ufbathesis` como o `documentclass` do seu documento.
-* Tente seguire o [modelo](template.tex) o mais fielmente possível.
+* Tente seguir um dos modelos o mais fielmente possível:
+    * Para teses de doutorado do DMCC, há um [modelo mais
+      simples](template.tex) com o mínimo necessário.
+    * Para qualquer outro trabalho, há o [modelo completo](template-full.tex)
+      possui tudo que você precisa preencher, e mais algumas coisas que talvez
+      você não queira (epígrafe, dedicatória, cólofon, bla bla bla).
 
 Em caso de dúvidas que não possam ser sanadas olhando o template, por enquanto
 a melhor coisa a fazer é olhar o código do `ufbathesis.cls`.

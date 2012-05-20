@@ -136,7 +136,7 @@
 \gdef\@mastersdegree{Mestre}
 \gdef\@phddegree{Doutor}
 \gdef\@presentationtext{%
-Trabalho apresentado ao Programa de
+Trabalho apresentado ao
 \@program\ do \if\@showdepartment1\@department\ \else\@institute\ \fi
 da \@university\ como requisito parcial para obten\c{c}\~{a}o do
 grau de \@degree\ em \@majorfield.}
@@ -216,19 +216,23 @@ grau de \@degree\ em \@majorfield.}
 \def\institute#1{%
   \let\@showinstitute=1
   \gdef\@institute{#1}}
+\institute{Instituto de Matem\'{a}tica}
 
 \let\@showdepartment=0
 \def\department#1{%
   \let\@showdepartment=1
   \gdef\@department{#1}}
+\department{Departamento de Ci\^{e}ncia da Computa\c{c}\~{a}o}
 
 \def\program#1{%
   \gdef\@program{#1}}
 \def\@program{\@notdefined}
+\program{Doutorado Multi-Institucional em Ci\^{e}ncia da Computa\c{c}\~{a}o}
 
 \def\majorfield#1{%
   \gdef\@majorfield{#1}}
 \def\@majorfield{\@notdefined}
+\majorfield{Ci\^{e}ncia da Computa\c{c}\~{a}o}
 
 \def\address#1{%
   \gdef\@address{#1}}

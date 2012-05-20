@@ -4,85 +4,19 @@
 %% (c) 2012 Antonio Terceiro
 %% www.dcc.ufba.br/~terceiro/ufbathesis
 
-%% Carrega a classe ufbathesis
-%% Opções: * Idiomas
-%%           pt   - português (padrão)
-%%           en   - inglês
-%%         * Tipo do Texto
-%%           bsc  - para monografias de graduação
-%%           msc  - para dissertações de mestrado (padrão)
-%%           qual - exame de qualificação doutorado
-%%           prop - proposta de tese doutorado
-%%           phd  - para teses de doutorado
-%%         * Mídia
-%%           scr  - para versão eletrônica (PDF) / consulte o guia do usuario
-%%         * Estilo
-%%           classic - estilo original à la TAOCP (deprecated)
-%%           std     - novo estilo à la CUP (padrão)
-%%         * Paginação
-%%           oneside - para impressão em face única
-%%           twoside - para impressão em frente e verso (padrão)
-\documentclass{ufbathesis}
+\documentclass[phd]{ufbathesis}
 \usepackage[utf8]{inputenc}
 
 %% Preâmbulo:
 %% coloque aqui o seu preâmbulo LaTeX, i.e., declaração de pacotes,
 %% (re)definições de macros, medidas, etc.
 
-%% Identificação:
-
-% Universidade
-% e.g. \university{Universidade de Campinas}
-% Na UFPE, comente a linha a seguir
-\university{<NOME DA UNIVERSIDADE>}
-
-% Endereço (cidade)
-% e.g. \address{Campinas}
-% Na UFPE, comente a linha a seguir
-\address{<CIDADE DA IES>}
-
-% Instituto ou Centro Acadêmico
-% e.g. \institute{Centro de Ciências Exatas e da Natureza}
-% Comente se não se aplicar
-\institute{<NOME DO INSTITUTO OU CENTRO ACADÊMICO>}
-
-% Departamento acadêmico
-% e.g. \department{Departamento de Informática}
-% Comente se não se aplicar
-\department{<NOME DO DEPARTAMENTO>}
-
-% Programa de pós-graduação
-% e.g. \program{Pós-graduação em Ciência da Computação}
-\program{<NOME DO PROGRAMA>}
-
-% Área de titulação
-% e.g. \majorfield{Ciência da Computação}
-\majorfield{<NOME DA ÁREA DE TITULAÇÃO>}
-
-% Título da dissertação/tese
-% e.g. \title{Sobre a conjectura $P=NP$}
 \title{<TÍTULO DA OBRA>}
-
-% Data da defesa
-% e.g. \date{19 de fevereiro de 2003}
 \date{<DATA DA DEFESA>}
-
-% Autor
-% e.g. \author{José da Silva}
 \author{<NOME DO AUTOR>}
-
-% Orientador(a)
-% Opção: [f] - para orientador do sexo feminino
-% e.g. \adviser[f]{Profa. Dra. Maria Santos}
 \adviser{<NOME DO(DA) ORIENTADOR(A)>}
-
-% Orientador(a)
-% Opção: [f] - para orientador do sexo feminino
-% e.g. \coadviser{Prof. Dr. Pedro Pedreira}
-% Comente se não se aplicar
 \coadviser{<NOME DO(DA) CO-ORIENTADOR(A)>}
 
-%% Inicio do documento
 \begin{document}
 
 %%
@@ -98,29 +32,10 @@
 % Comente para ocultar
 \presentationpage
 
-% Dedicatória
-% Comente para ocultar
-\begin{dedicatory}
-<DIGITE A DEDICATÒRIA AQUI>
-\end{dedicatory}
-
 % Agradecimentos
 % Se preferir, crie um arquivo à parte e o inclua via \include{}
 \acknowledgements
 <DIGITE OS AGRADECIMENTOS AQUI>
-
-% Epígrafe
-% Comente para ocultar
-% e.g.
-%  \begin{epigraph}[Tarde, 1919]{Olavo Bilac}
-%  Última flor do Lácio, inculta e bela,\\
-%  És, a um tempo, esplendor e sepultura;\\
-%  Ouro nativo, que, na ganga impura,\\
-%  A bruta mina entre os cascalhos vela.
-%  \end{epigraph}
-\begin{epigraph}[<NOTA>]{<AUTOR>}
-<DIGITE AQUI A CITAÇÂO>
-\end{epigraph}
 
 % Resumo em Português
 % Se preferir, crie um arquivo à parte e o inclua via \include{}
@@ -151,8 +66,6 @@
 % Comente para ocultar
 \listoftables
 
-
-
 %%
 %% Parte textual
 %%
@@ -166,46 +79,6 @@
 % ...
 % \include{capituloN}
 
-
-\chapter{Capitulo 1}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac tellus turpis. Donec vitae lorem odio. Sed luctus vestibulum libero eget pellentesque. Vivamus in mi turpis. Donec molestie feugiat sollicitudin. Nam et eleifend tortor. Cras lacinia, magna in tristique consequat, urna lorem placerat odio, id viverra mi nulla nec sem. Ut imperdiet, felis a hendrerit imperdiet, velit metus eleifend diam, ut convallis neque augue vitae leo. Morbi condimentum rhoncus faucibus. Fusce elit justo, semper lobortis blandit sed, lacinia et ligula. Pellentesque elit magna, vestibulum vitae adipiscing in, tincidunt eu erat. Nullam eu lectus vel nunc eleifend consectetur. Phasellus faucibus blandit nisi, eget fermentum erat tincidunt et. Aliquam ullamcorper varius nunc, nec eleifend dolor porttitor eu. Etiam eget nunc eu erat facilisis consequat sed accumsan urna. Nam vitae eros et justo iaculis gravida in sed nisl. Donec auctor gravida ipsum. Morbi sed ipsum tortor, quis ornare purus.
-
-Nulla facilisi. Praesent nec massa nulla, interdum lobortis orci. Integer convallis porttitor congue. Etiam lectus ipsum, iaculis eu malesuada malesuada, scelerisque semper est. In convallis ipsum lacus, at dapibus velit. Praesent semper diam eget eros ultrices quis elementum libero cursus. Aliquam erat volutpat. Nunc a lectus augue, id sagittis neque. Aliquam dignissim tempus sem ut pellentesque. Nulla libero orci, elementum vel malesuada mattis, adipiscing sed lorem. Cras lacinia elit vel magna mollis ut congue elit faucibus. Duis ornare mollis est, quis hendrerit neque convallis in.
-
-Donec at leo sed nisl varius iaculis. Sed ullamcorper nisl sit amet metus sollicitudin quis cursus elit imperdiet. Donec vel ante sed elit tempor hendrerit. Quisque commodo neque a ante tempor rhoncus. Proin purus metus, interdum mattis elementum quis, mollis et felis. Curabitur id nibh ac sapien porta pellentesque vel nec sapien. Duis ullamcorper consectetur elit, eleifend tincidunt leo adipiscing a. Cras nunc quam, sodales sit amet semper at, pharetra quis libero. Vestibulum posuere risus sed ante interdum tempor. Sed nec enim lorem, eu ultrices nisl. Maecenas cursus lacus non metus convallis cursus. Cras egestas feugiat libero, quis luctus justo mattis ut. Proin vitae magna et purus convallis blandit ut sed risus. Nulla vel ligula massa, vel interdum tortor. Integer sit amet eros sit amet lectus suscipit adipiscing. Aenean sagittis diam eu orci porttitor luctus.
-
-Sed sed elit eu ante malesuada aliquet. Nunc quis quam turpis, accumsan faucibus sapien. Nam eget sem velit, id eleifend elit. Phasellus auctor egestas libero a adipiscing. Integer convallis, nunc sed tincidunt sollicitudin, augue diam accumsan risus, sit amet lacinia neque quam at lorem. Quisque ac rhoncus mauris. Donec felis odio, consequat vitae pretium ullamcorper, blandit id lorem. Morbi nec tellus vitae velit eleifend bibendum at vel eros. Sed quis enim urna. Cras placerat ultricies ipsum, sed tempor lorem placerat vitae. Morbi tellus leo, blandit eget feugiat nec, bibendum egestas erat. Mauris lobortis congue vestibulum. Nunc ultricies arcu in neque hendrerit convallis. Phasellus facilisis dictum nulla vel iaculis. Donec in adipiscing tellus. Aliquam non turpis neque. Nam in velit nec tortor gravida convallis. Vivamus tincidunt eros quis elit ultricies at adipiscing urna tempor. Donec posuere, ante pulvinar laoreet adipiscing, eros nulla pharetra nulla, vel rutrum elit est vitae ligula.
-
-Phasellus urna nulla, laoreet in imperdiet a, porttitor eu nibh. Phasellus ac arcu magna, sit amet dapibus eros. Maecenas eget metus vitae leo feugiat lobortis ac quis tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque vel augue metus. Quisque fringilla, arcu ut fringilla consectetur, mauris tellus euismod sem, in vehicula est leo vel nisi. Praesent sapien ligula, malesuada eget hendrerit ac, aliquet nec turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Mauris commodo elementum elit, fermentum placerat nulla iaculis nec. Vestibulum neque dui, cursus at pharetra eu, sollicitudin eget justo. In id dignissim augue. Fusce interdum malesuada ipsum, non aliquet quam auctor eget. Curabitur turpis libero, pharetra ut cursus porta, pellentesque vitae magna. Cras porttitor interdum nisl.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac tellus turpis. Donec vitae lorem odio. Sed luctus vestibulum libero eget pellentesque. Vivamus in mi turpis. Donec molestie feugiat sollicitudin. Nam et eleifend tortor. Cras lacinia, magna in tristique consequat, urna lorem placerat odio, id viverra mi nulla nec sem. Ut imperdiet, felis a hendrerit imperdiet, velit metus eleifend diam, ut convallis neque augue vitae leo. Morbi condimentum rhoncus faucibus. Fusce elit justo, semper lobortis blandit sed, lacinia et ligula. Pellentesque elit magna, vestibulum vitae adipiscing in, tincidunt eu erat. Nullam eu lectus vel nunc eleifend consectetur. Phasellus faucibus blandit nisi, eget fermentum erat tincidunt et. Aliquam ullamcorper varius nunc, nec eleifend dolor porttitor eu. Etiam eget nunc eu erat facilisis consequat sed accumsan urna. Nam vitae eros et justo iaculis gravida in sed nisl. Donec auctor gravida ipsum. Morbi sed ipsum tortor, quis ornare purus.
-
-Nulla facilisi. Praesent nec massa nulla, interdum lobortis orci. Integer convallis porttitor congue. Etiam lectus ipsum, iaculis eu malesuada malesuada, scelerisque semper est. In convallis ipsum lacus, at dapibus velit. Praesent semper diam eget eros ultrices quis elementum libero cursus. Aliquam erat volutpat. Nunc a lectus augue, id sagittis neque. Aliquam dignissim tempus sem ut pellentesque. Nulla libero orci, elementum vel malesuada mattis, adipiscing sed lorem. Cras lacinia elit vel magna mollis ut congue elit faucibus. Duis ornare mollis est, quis hendrerit neque convallis in.
-
-Donec at leo sed nisl varius iaculis. Sed ullamcorper nisl sit amet metus sollicitudin quis cursus elit imperdiet. Donec vel ante sed elit tempor hendrerit. Quisque commodo neque a ante tempor rhoncus. Proin purus metus, interdum mattis elementum quis, mollis et felis. Curabitur id nibh ac sapien porta pellentesque vel nec sapien. Duis ullamcorper consectetur elit, eleifend tincidunt leo adipiscing a. Cras nunc quam, sodales sit amet semper at, pharetra quis libero. Vestibulum posuere risus sed ante interdum tempor. Sed nec enim lorem, eu ultrices nisl. Maecenas cursus lacus non metus convallis cursus. Cras egestas feugiat libero, quis luctus justo mattis ut. Proin vitae magna et purus convallis blandit ut sed risus. Nulla vel ligula massa, vel interdum tortor. Integer sit amet eros sit amet lectus suscipit adipiscing. Aenean sagittis diam eu orci porttitor luctus.
-
-Sed sed elit eu ante malesuada aliquet. Nunc quis quam turpis, accumsan faucibus sapien. Nam eget sem velit, id eleifend elit. Phasellus auctor egestas libero a adipiscing. Integer convallis, nunc sed tincidunt sollicitudin, augue diam accumsan risus, sit amet lacinia neque quam at lorem. Quisque ac rhoncus mauris. Donec felis odio, consequat vitae pretium ullamcorper, blandit id lorem. Morbi nec tellus vitae velit eleifend bibendum at vel eros. Sed quis enim urna. Cras placerat ultricies ipsum, sed tempor lorem placerat vitae. Morbi tellus leo, blandit eget feugiat nec, bibendum egestas erat. Mauris lobortis congue vestibulum. Nunc ultricies arcu in neque hendrerit convallis. Phasellus facilisis dictum nulla vel iaculis. Donec in adipiscing tellus. Aliquam non turpis neque. Nam in velit nec tortor gravida convallis. Vivamus tincidunt eros quis elit ultricies at adipiscing urna tempor. Donec posuere, ante pulvinar laoreet adipiscing, eros nulla pharetra nulla, vel rutrum elit est vitae ligula.
-
-Phasellus urna nulla, laoreet in imperdiet a, porttitor eu nibh. Phasellus ac arcu magna, sit amet dapibus eros. Maecenas eget metus vitae leo feugiat lobortis ac quis tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque vel augue metus. Quisque fringilla, arcu ut fringilla consectetur, mauris tellus euismod sem, in vehicula est leo vel nisi. Praesent sapien ligula, malesuada eget hendrerit ac, aliquet nec turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Mauris commodo elementum elit, fermentum placerat nulla iaculis nec. Vestibulum neque dui, cursus at pharetra eu, sollicitudin eget justo. In id dignissim augue. Fusce interdum malesuada ipsum, non aliquet quam auctor eget. Curabitur turpis libero, pharetra ut cursus porta, pellentesque vitae magna. Cras porttitor interdum nisl.
-
-\chapter{Capitulo 2}
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac tellus turpis. Donec vitae lorem odio. Sed luctus vestibulum libero eget pellentesque. Vivamus in mi turpis. Donec molestie feugiat sollicitudin. Nam et eleifend tortor. Cras lacinia, magna in tristique consequat, urna lorem placerat odio, id viverra mi nulla nec sem. Ut imperdiet, felis a hendrerit imperdiet, velit metus eleifend diam, ut convallis neque augue vitae leo. Morbi condimentum rhoncus faucibus. Fusce elit justo, semper lobortis blandit sed, lacinia et ligula. Pellentesque elit magna, vestibulum vitae adipiscing in, tincidunt eu erat. Nullam eu lectus vel nunc eleifend consectetur. Phasellus faucibus blandit nisi, eget fermentum erat tincidunt et. Aliquam ullamcorper varius nunc, nec eleifend dolor porttitor eu. Etiam eget nunc eu erat facilisis consequat sed accumsan urna. Nam vitae eros et justo iaculis gravida in sed nisl. Donec auctor gravida ipsum. Morbi sed ipsum tortor, quis ornare purus.
-
-Nulla facilisi. Praesent nec massa nulla, interdum lobortis orci. Integer convallis porttitor congue. Etiam lectus ipsum, iaculis eu malesuada malesuada, scelerisque semper est. In convallis ipsum lacus, at dapibus velit. Praesent semper diam eget eros ultrices quis elementum libero cursus. Aliquam erat volutpat. Nunc a lectus augue, id sagittis neque. Aliquam dignissim tempus sem ut pellentesque. Nulla libero orci, elementum vel malesuada mattis, adipiscing sed lorem. Cras lacinia elit vel magna mollis ut congue elit faucibus. Duis ornare mollis est, quis hendrerit neque convallis in.
-
-Donec at leo sed nisl varius iaculis. Sed ullamcorper nisl sit amet metus sollicitudin quis cursus elit imperdiet. Donec vel ante sed elit tempor hendrerit. Quisque commodo neque a ante tempor rhoncus. Proin purus metus, interdum mattis elementum quis, mollis et felis. Curabitur id nibh ac sapien porta pellentesque vel nec sapien. Duis ullamcorper consectetur elit, eleifend tincidunt leo adipiscing a. Cras nunc quam, sodales sit amet semper at, pharetra quis libero. Vestibulum posuere risus sed ante interdum tempor. Sed nec enim lorem, eu ultrices nisl. Maecenas cursus lacus non metus convallis cursus. Cras egestas feugiat libero, quis luctus justo mattis ut. Proin vitae magna et purus convallis blandit ut sed risus. Nulla vel ligula massa, vel interdum tortor. Integer sit amet eros sit amet lectus suscipit adipiscing. Aenean sagittis diam eu orci porttitor luctus.
-
-Sed sed elit eu ante malesuada aliquet. Nunc quis quam turpis, accumsan faucibus sapien. Nam eget sem velit, id eleifend elit. Phasellus auctor egestas libero a adipiscing. Integer convallis, nunc sed tincidunt sollicitudin, augue diam accumsan risus, sit amet lacinia neque quam at lorem. Quisque ac rhoncus mauris. Donec felis odio, consequat vitae pretium ullamcorper, blandit id lorem. Morbi nec tellus vitae velit eleifend bibendum at vel eros. Sed quis enim urna. Cras placerat ultricies ipsum, sed tempor lorem placerat vitae. Morbi tellus leo, blandit eget feugiat nec, bibendum egestas erat. Mauris lobortis congue vestibulum. Nunc ultricies arcu in neque hendrerit convallis. Phasellus facilisis dictum nulla vel iaculis. Donec in adipiscing tellus. Aliquam non turpis neque. Nam in velit nec tortor gravida convallis. Vivamus tincidunt eros quis elit ultricies at adipiscing urna tempor. Donec posuere, ante pulvinar laoreet adipiscing, eros nulla pharetra nulla, vel rutrum elit est vitae ligula.
-
-Phasellus urna nulla, laoreet in imperdiet a, porttitor eu nibh. Phasellus ac arcu magna, sit amet dapibus eros. Maecenas eget metus vitae leo feugiat lobortis ac quis tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque vel augue metus. Quisque fringilla, arcu ut fringilla consectetur, mauris tellus euismod sem, in vehicula est leo vel nisi. Praesent sapien ligula, malesuada eget hendrerit ac, aliquet nec turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Mauris commodo elementum elit, fermentum placerat nulla iaculis nec. Vestibulum neque dui, cursus at pharetra eu, sollicitudin eget justo. In id dignissim augue. Fusce interdum malesuada ipsum, non aliquet quam auctor eget. Curabitur turpis libero, pharetra ut cursus porta, pellentesque vitae magna. Cras porttitor interdum nisl.
-
-
-%%
-%% Parte pós-textual
-%%
 \backmatter
 
 % Apêndices
@@ -228,11 +101,6 @@ Phasellus urna nulla, laoreet in imperdiet a, porttitor eu nibh. Phasellus ac ar
 \nocite{*}
 \bibliographystyle{alpha}
 \bibliography{biblio}
-
-% Cólofon
-% Inclui uma pequena nota com referência à UFPEThesis
-% Comente para omitir
-\colophon
 
 %% Fim do documento
 \end{document}

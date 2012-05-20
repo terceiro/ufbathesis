@@ -339,7 +339,7 @@ grau de \@degree\ em \@majorfield.}
 	\if@openright\cleardoublepage\else\clearpage\fi
   \thispagestyle{empty}
   \begin{center}
-  \input\universitylogo
+  \includegraphics[width=3cm]{ufba}
   \sf\large
   \\\@university
   \if\@showinstitute1\\\@institute\fi

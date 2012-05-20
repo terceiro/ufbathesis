@@ -4,9 +4,13 @@ UPLOAD_TO = app.dcc.ufba.br:~/public_html/ufbathesis/
 
 all: test
 
-test: ufbathesis.cls template.tex
-	latex template.tex
-	pdflatex template.tex
+test: ufbathesis.cls template.dvi template.pdf template-full.dvi template-full.pdf
+
+%.dvi: %.tex
+	latex $<
+
+%.pdf: %.tex
+	pdflatex $<
 
 dist: $(TARBALL)
 
@@ -21,5 +25,5 @@ upload: $(TARBALL) index.html template.tex
 
 clean:
 	$(RM) $(TARBALL)
-	$(RM) template.aux template.dvi template.lof template.log template.lot template.pdf template.toc
+	$(RM) *.aux *.lof *.log *.lot *.toc template*.pdf template*.dvi
 	$(RM) index.html

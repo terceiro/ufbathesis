@@ -1,92 +1,92 @@
-%% Template para dissertação/tese na classe UFBAthesis
-%% versão 0.9.2
+%% Template para dissertaÃ§Ã£o/tese na classe UFBAthesis
+%% versÃ£o 0.9.2
 %% (c) 2005 Paulo G. S. Fonseca
 %% (c) 2012 Antonio Terceiro
 %% www.dcc.ufba.br/~terceiro/ufbathesis
 
 %% Carrega a classe ufbathesis
-%% Opções: * Idiomas
-%%           pt   - português (padrão)
-%%           en   - inglês
+%% OpÃ§Ãµes: * Idiomas
+%%           pt   - portuguÃªs (padrÃ£o)
+%%           en   - inglÃªs
 %%         * Tipo do Texto
-%%           bsc  - para monografias de graduação
-%%           msc  - para dissertações de mestrado (padrão)
-%%           qual - exame de qualificação doutorado
+%%           bsc  - para monografias de graduaÃ§Ã£o
+%%           msc  - para dissertaÃ§Ãµes de mestrado (padrÃ£o)
+%%           qual - exame de qualificaÃ§Ã£o doutorado
 %%           prop - proposta de tese doutorado
 %%           phd  - para teses de doutorado
-%%         * Mídia
-%%           scr  - para versão eletrônica (PDF) / consulte o guia do usuario
+%%         * MÃ­dia
+%%           scr  - para versÃ£o eletrÃ´nica (PDF) / consulte o guia do usuario
 %%         * Estilo
-%%           classic - estilo original à la TAOCP (deprecated)
-%%           std     - novo estilo à la CUP (padrão)
-%%         * Paginação
-%%           oneside - para impressão em face única
-%%           twoside - para impressão em frente e verso (padrão)
+%%           classic - estilo original Ã  la TAOCP (deprecated)
+%%           std     - novo estilo Ã  la CUP (padrÃ£o)
+%%         * PaginaÃ§Ã£o
+%%           oneside - para impressÃ£o em face Ãºnica
+%%           twoside - para impressÃ£o em frente e verso (padrÃ£o)
 \documentclass{ufbathesis}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 
-%% Preâmbulo:
-%% coloque aqui o seu preâmbulo LaTeX, i.e., declaração de pacotes,
-%% (re)definições de macros, medidas, etc.
+%% PreÃ¢mbulo:
+%% coloque aqui o seu preÃ¢mbulo LaTeX, i.e., declaraÃ§Ã£o de pacotes,
+%% (re)definiÃ§Ãµes de macros, medidas, etc.
 
-%% Identificação:
+%% IdentificaÃ§Ã£o:
 
 % Universidade
 % e.g. \university{Universidade de Campinas}
 % Na UFPE, comente a linha a seguir
 \university{<NOME DA UNIVERSIDADE>}
 
-% Endereço (cidade)
+% EndereÃ§o (cidade)
 % e.g. \address{Campinas}
 % Na UFPE, comente a linha a seguir
 \address{<CIDADE DA IES>}
 
-% Instituto ou Centro Acadêmico
-% e.g. \institute{Centro de Ciências Exatas e da Natureza}
-% Comente se não se aplicar
-\institute{<NOME DO INSTITUTO OU CENTRO ACADÊMICO>}
+% Instituto ou Centro AcadÃªmico
+% e.g. \institute{Centro de CiÃªncias Exatas e da Natureza}
+% Comente se nÃ£o se aplicar
+\institute{<NOME DO INSTITUTO OU CENTRO ACADÃŠMICO>}
 
-% Departamento acadêmico
-% e.g. \department{Departamento de Informática}
-% Comente se não se aplicar
+% Departamento acadÃªmico
+% e.g. \department{Departamento de InformÃ¡tica}
+% Comente se nÃ£o se aplicar
 \department{<NOME DO DEPARTAMENTO>}
 
-% Programa de pós-graduação
-% e.g. \program{Pós-graduação em Ciência da Computação}
+% Programa de pÃ³s-graduaÃ§Ã£o
+% e.g. \program{PÃ³s-graduaÃ§Ã£o em CiÃªncia da ComputaÃ§Ã£o}
 \program{<NOME DO PROGRAMA>}
 
-% Área de titulação
-% e.g. \majorfield{Ciência da Computação}
-\majorfield{<NOME DA ÁREA DE TITULAÇÃO>}
+% Ãrea de titulaÃ§Ã£o
+% e.g. \majorfield{CiÃªncia da ComputaÃ§Ã£o}
+\majorfield{<NOME DA ÃREA DE TITULAÃ‡ÃƒO>}
 
-% Título da dissertação/tese
+% TÃ­tulo da dissertaÃ§Ã£o/tese
 % e.g. \title{Sobre a conjectura $P=NP$}
-\title{<TÍTULO DA OBRA>}
+\title{<TÃTULO DA OBRA>}
 
 % Data da defesa
 % e.g. \date{19 de fevereiro de 2003}
 \date{<DATA DA DEFESA>}
 
 % Autor
-% e.g. \author{José da Silva}
+% e.g. \author{JosÃ© da Silva}
 \author{<NOME DO AUTOR>}
 
 % Orientador(a)
-% Opção: [f] - para orientador do sexo feminino
+% OpÃ§Ã£o: [f] - para orientador do sexo feminino
 % e.g. \adviser[f]{Profa. Dra. Maria Santos}
 \adviser{<NOME DO(DA) ORIENTADOR(A)>}
 
 % Orientador(a)
-% Opção: [f] - para orientador do sexo feminino
+% OpÃ§Ã£o: [f] - para orientador do sexo feminino
 % e.g. \coadviser{Prof. Dr. Pedro Pedreira}
-% Comente se não se aplicar
+% Comente se nÃ£o se aplicar
 \coadviser{NOME DO(DA) CO-ORIENTADOR(A)}
 
 %% Inicio do documento
 \begin{document}
 
 %%
-%% Parte pré-textual
+%% Parte prÃ©-textual
 %%
 \frontmatter
 
@@ -94,52 +94,52 @@
 % Comente para ocultar
 \frontpage
 
-% Portada (apresentação)
+% Portada (apresentaÃ§Ã£o)
 % Comente para ocultar
 \presentationpage
 
-% Dedicatória
+% DedicatÃ³ria
 % Comente para ocultar
 \begin{dedicatory}
-<DIGITE A DEDICATÒRIA AQUI>
+<DIGITE A DEDICATÃ’RIA AQUI>
 \end{dedicatory}
 
 % Agradecimentos
-% Se preferir, crie um arquivo à parte e o inclua via \include{}
+% Se preferir, crie um arquivo Ã  parte e o inclua via \include{}
 \acknowledgements
 <DIGITE OS AGRADECIMENTOS AQUI>
 
-% Epígrafe
+% EpÃ­grafe
 % Comente para ocultar
 % e.g.
 %  \begin{epigraph}[Tarde, 1919]{Olavo Bilac}
-%  Última flor do Lácio, inculta e bela,\\
-%  És, a um tempo, esplendor e sepultura;\\
+%  Ãšltima flor do LÃ¡cio, inculta e bela,\\
+%  Ã‰s, a um tempo, esplendor e sepultura;\\
 %  Ouro nativo, que, na ganga impura,\\
 %  A bruta mina entre os cascalhos vela.
 %  \end{epigraph}
 \begin{epigraph}[<NOTA>]{<AUTOR>}
-<DIGITE AQUI A CITAÇÂO>
+<DIGITE AQUI A CITAÃ‡Ã‚O>
 \end{epigraph}
 
-% Resumo em Português
-% Se preferir, crie um arquivo à parte e o inclua via \include{}
+% Resumo em PortuguÃªs
+% Se preferir, crie um arquivo Ã  parte e o inclua via \include{}
 \resumo
 <DIGITE O RESUMO AQUI>
-% Palavras-chave do resumo em Português
+% Palavras-chave do resumo em PortuguÃªs
 \begin{keywords}
 <DIGITE AS PALAVRAS-CHAVE AQUI>
 \end{keywords}
 
-% Resumo em Inglês
-% Se preferir, crie um arquivo à parte e o inclua via \include{}
+% Resumo em InglÃªs
+% Se preferir, crie um arquivo Ã  parte e o inclua via \include{}
 \abstract
-% Palavras-chave do resumo em Inglês
+% Palavras-chave do resumo em InglÃªs
 \begin{keywords}
 <DIGITE AS PALAVRAS-CHAVE AQUI>
 \end{keywords}
 
-% Sumário
+% SumÃ¡rio
 % Comente para ocultar
 \tableofcontents
 
@@ -158,9 +158,9 @@
 %%
 \mainmatter
 
-% É aconselhável criar cada capítulo em um arquivo à parte, digamos
+% Ã‰ aconselhÃ¡vel criar cada capÃ­tulo em um arquivo Ã  parte, digamos
 % "capitulo1.tex", "capitulo2.tex", ... "capituloN.tex" e depois
-% incluí-los com:
+% incluÃ­-los com:
 % \include{capitulo1}
 % \include{capitulo2}
 % ...
@@ -204,17 +204,17 @@ Phasellus urna nulla, laoreet in imperdiet a, porttitor eu nibh. Phasellus ac ar
 
 
 %%
-%% Parte pós-textual
+%% Parte pÃ³s-textual
 %%
 \backmatter
 
-% Apêndices
-% Comente se não houver apêndices
+% ApÃªndices
+% Comente se nÃ£o houver apÃªndices
 \appendix
 
-% É aconselhável criar cada apêndice em um arquivo à parte, digamos
+% Ã‰ aconselhÃ¡vel criar cada apÃªndice em um arquivo Ã  parte, digamos
 % "apendice1.tex", "apendice.tex", ... "apendiceM.tex" e depois
-% incluí-los com:
+% incluÃ­-los com:
 % \include{apendice1}
 % \include{apendice2}
 % ...
@@ -222,15 +222,15 @@ Phasellus urna nulla, laoreet in imperdiet a, porttitor eu nibh. Phasellus ac ar
 
 
 % Bibliografia
-% É aconselhável utilizar o BibTeX a partir de um arquivo, digamos "biblio.bib".
-% Para ajuda na criação do arquivo .bib e utilização do BibTeX, recorra ao
+% Ã‰ aconselhÃ¡vel utilizar o BibTeX a partir de um arquivo, digamos "biblio.bib".
+% Para ajuda na criaÃ§Ã£o do arquivo .bib e utilizaÃ§Ã£o do BibTeX, recorra ao
 % BibTeXpress em www.cin.ufpe.br/~paguso/bibtexpress
 \nocite{*}
 \bibliographystyle{alpha}
 \bibliography{biblio}
 
-% Cólofon
-% Inclui uma pequena nota com referência à UFPEThesis
+% CÃ³lofon
+% Inclui uma pequena nota com referÃªncia Ã  UFPEThesis
 % Comente para omitir
 \colophon
 

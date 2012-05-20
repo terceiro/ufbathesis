@@ -14,7 +14,7 @@ $(TARBALL): ufbathesis.cls ufba.eps ufba.pdf
 	tar czf $(TARBALL) $^
 
 index.html: README.md
-	pandoc -s -f markdown -t html $< > $@
+	(pandoc -s -f markdown -t html $< | sed -e 's/##VERSION##/$(VERSION)/g' > $@) || ($(RM) $@; false)
 
 upload: $(TARBALL) index.html template.tex
 	scp index.html $^ $(UPLOAD_TO)

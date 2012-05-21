@@ -441,13 +441,15 @@ grau de \@degree\ em \@majorfield.}
     \begin{minipage}{100mm}
     \quotefonti %
     \@presentationtext
-    \vskip2\baselineskip
-    {\quotefont \@advisertitle:} \@adviser
-    \if\@showcoadviser1
-      \\ {\quotefont\@coadvisertitle:} \@coadviser
-    \fi
     \end{minipage}
   \end{flushright}
+  \begin{center}
+    \vskip2\baselineskip
+    {\@advisertitle:} \@adviser
+    \if\@showcoadviser1
+      \\ {\@coadvisertitle:} \@coadviser
+    \fi
+  \end{center}
   \vfill
   \@address\\
   \@date

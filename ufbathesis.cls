@@ -419,6 +419,39 @@ grau de \@degree\ em \@majorfield.}
   \end{center}
 }
 
+\def\dmccfrontpage#1{%
+ \if@openright\cleardoublepage\else\clearpage\fi
+  \thispagestyle{empty}
+  \begin{center}
+  \sf\large
+  \textbf{%
+  Universidade Federal da Bahia
+  \\Universidade Salvador
+  \\Universidade Estadual de Feira de Santana}
+  \vskip 25mm
+  \textbf{\MakeTextUppercase{\@texttype}}
+  \vskip 25mm
+  \begin{minipage}{150mm}
+    \begin{center}
+      \textbf{\@title}
+      \vskip\baselineskip
+      \@author
+      \vskip 45mm
+      \textbf{Programa Multiinstitucional de\\
+      P\'{o}s-Gradua\c{c}\~{a}o em Ci\^{e}ncia da	Computa\c{c}\~{a}o -- PMCC}
+      \\
+      \vskip\baselineskip
+      \@address\\
+      \@date
+    \end{center}
+  \end{minipage}\\
+\begin{flushright}
+#1
+\end{flushright}
+  \end{center}
+  \vfill
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Presentation page
@@ -456,6 +489,38 @@ grau de \@degree\ em \@majorfield.}
   \end{center}
 }
 
+\def\dmccpresentationpage{%
+  \if@openright\cleardoublepage\else\clearpage\fi
+  \thispagestyle{empty}
+  \begin{center}
+  \sf\large
+  \MakeTextUppercase{\@author}
+  \vskip 65mm
+  \textbf{\MakeTextUppercase{\@title}}
+  \vskip 45mm
+  \begin{flushright}
+    \begin{minipage}{0.5\textwidth}
+    \quotefonti %
+    Tese apresentada ao Programa Multiinstitucional de
+    P\'{o}s-Gradua\c{c}\~{a}o em Ci\^{e}ncia da Computa\c{c}\~{a}o da
+    Universidade Federal da Bahia, Universidade Estadual de Feira de
+    Santana e Universidade Salvador, como requisito parcial para
+    obten\c{c}\~{a}o do grau de Doutor em Ci\^{e}ncia da
+    Computa\c{c}\~{a}o.
+    \end{minipage}
+  \end{flushright}
+  \begin{center}
+    \vskip2\baselineskip
+    {\@advisertitle:} \@adviser
+    \if\@showcoadviser1
+      \\ {\@coadvisertitle:} \@coadviser
+    \fi
+  \end{center}
+  \vfill
+  \@address\\
+  \@date
+  \end{center}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Dedicatory

@@ -104,6 +104,7 @@
   \RequirePackage[dvipdfm,colorlinks,backref]{hyperref}
 \fi
 \RequirePackage[alf]{abntcite}
+\RequirePackage{lastpage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% GENERAL PURPOSE MACROS
@@ -318,6 +319,60 @@ grau de \@degree\ em \@majorfield.}
 \setlength{\marginparsep}{0mm}
 \setlength{\textwidth}{\paperwidth-2in}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Cataloging Sheet (``ficha catalografica'')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\library#1{%
+  \gdef\@library{#1}}
+\library{Biblioteca Reitor Macedo Costa}
+\def\authorcitationname#1{%
+  \gdef\@authorcitationname{#1}}
+\def\advisercitationname#1{%
+  \gdef\@advisercitationname{#1}}
+\def\catalogtype#1{%
+  \gdef\@catalogtype{#1}}
+\def\catalogtopics#1{%
+  \gdef\@catalogtopics{#1}}
+\def\catalogcdd#1{%
+  \gdef\@catalogcdd{#1}}
+
+\def\catalogingsheet{%
+  \begin{center}
+
+    \hspace{1cm}
+    \vfill
+    Ficha catalogr\'{a}fica elaborada pela \@library, \\
+    \@institute.
+
+    \fbox{
+      \hspace{1.75cm}
+      \begin{minipage}[t]{13.5cm}
+        \vspace{1em}
+        \@authorcitationname
+
+        \advance\parindent by 1em
+        \advance\parskip by 1em
+        \@title / \@author -- \@address, \@date.
+
+        \pageref{LastPage}p.: il.
+
+        \@advisertitle: \@adviser.\\
+        \@catalogtype -- \@university, \@institute,
+        \@date.
+
+        \@catalogtopics.\\
+        I. \@advisercitationname.
+        II. \@university. \@institute.
+        III T\'{i}tulo.
+
+        \hspace{8.5cm}\@catalogcdd
+
+      \end{minipage}
+    }
+
+  \end{center}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%         CLASSIC STYLE            %%%%%%%%%%%%%%%%%%%

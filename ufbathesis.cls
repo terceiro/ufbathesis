@@ -397,9 +397,8 @@ grau de \@degree\ em \@majorfield.}
 	\if@openright\cleardoublepage\else\clearpage\fi
   \thispagestyle{empty}
   \begin{center}
-  \includegraphics[width=3cm]{ufba}
   \sf\large
-  \\\@university
+  \@university
   \if\@showinstitute1\\\@institute\fi
   \if\@showdepartment1\\\@department\fi
   \vskip 25mm
@@ -935,9 +934,8 @@ grau de \@degree\ em \@majorfield.}
   \if@openright\cleardoublepage\else\clearpage\fi
   \thispagestyle{empty}
   \begin{center}
-  \includegraphics[width=3cm]{ufba}
   \large
-  \\\@university
+  \@university
   \if\@showinstitute1\\\@institute\fi
   \if\@showdepartment1\\\@department\fi
   \vskip 25mm

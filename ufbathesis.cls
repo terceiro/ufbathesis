@@ -106,6 +106,8 @@
 \RequirePackage[alf]{abntcite}
 \RequirePackage{lastpage}
 \RequirePackage[top=3cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+\RequirePackage{fix-cm}
+\RequirePackage{color}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% GENERAL PURPOSE MACROS
@@ -768,6 +770,43 @@ grau de \@degree\ em \@majorfield.}
   \small\noindent\@colophontext
 }
 
+\def\xchapter{\if@openright\cleardoublepage\else\clearpage\fi
+                    \thispagestyle{plain}%
+                    \global\@topnum\z@
+                    \@afterindentfalse
+                    \secdef\@xchapter\@schapter}
+
+\def\@xchapter[#1]#2#3{
+   \refstepcounter{chapter}%
+   \addcontentsline{toc}{chapter}{\chaptername~\thechapter---#1}%
+   \chaptermark{#1}%
+   \addtocontents{lof}{\protect\addvspace{10\p@}}%
+   \addtocontents{lot}{\protect\addvspace{10\p@}}%
+   \@lopcchapterspace%
+   \@makexchapterhead{#2}{#3}%
+   \@afterheading
+   }
+
+\definecolor{dmccchapterbgcolor}{rgb}{0.8,0.8,0.8}
+\def\@makexchapterhead#1#2{%
+  \begin{flushright}
+    \colorbox{dmccchapterbgcolor}{
+      \begin{minipage}{0.2\textwidth}
+        \begin{center}
+        \vspace{0.5\baselineskip}
+        {\sffamily\bfseries \fontsize{18pt}{18pt}\selectfont \textbf{\chaptername}} \\
+        \vspace{0.5\baselineskip}
+    {\sffamily\bfseries \fontsize{98pt}{98pt}\selectfont \color{white}{\textbf{\thechapter}}} \\ \vspace{0.5\baselineskip}
+         \end{center}
+      \end{minipage}
+    }
+  \end{flushright}
+  \vskip 2\baselineskip%
+  {\noindent\itshape\footnotesize #2}
+  \vskip 0.5\baselineskip%
+  {\begin{flushright}\sffamily\Large\bfseries\MakeUppercase{#1}\end{flushright}}%
+  \vskip 1.5\baselineskip
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Headers & footers

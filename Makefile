@@ -25,5 +25,5 @@ upload: $(TARBALL) index.html template.tex template-full.tex
 
 clean:
 	$(RM) $(TARBALL)
-	$(RM) *.aux *.lof *.log *.lot *.toc template*.pdf template*.dvi
+	$(RM) *.aux *.lof *.log *.lot *.toc *.out template*.pdf template*.dvi
 	$(RM) index.html

@@ -105,6 +105,7 @@
 \fi
 \RequirePackage[alf]{abntcite}
 \RequirePackage{lastpage}
+\RequirePackage[top=3cm, bottom=2cm, left=3cm, right=2cm]{geometry}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% GENERAL PURPOSE MACROS
@@ -313,8 +314,6 @@ grau de \@degree\ em \@majorfield.}
 
 \setlength{\topmargin}{0mm}
 \setlength{\textheight}{\paperheight-\headheight-\headsep-\footskip-2in}
-\setlength{\oddsidemargin}{0mm}
-\setlength{\evensidemargin}{0mm}
 \setlength{\marginparwidth}{0mm}
 \setlength{\marginparsep}{0mm}
 \setlength{\textwidth}{\paperwidth-2in}

@@ -444,11 +444,12 @@ grau de \@degree\ em \@majorfield.}
       \@date
     \end{center}
   \end{minipage}\\
-\begin{flushright}
-#1
-\end{flushright}
-  \end{center}
   \vfill
+  \end{center}
+  \begin{flushright}
+  \sf\large
+  #1
+  \end{flushright}
 }
 
 

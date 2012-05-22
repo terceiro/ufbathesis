@@ -1,0 +1,10 @@
+*.tar.gz
+*.aux
+*.lof
+*.log
+*.lot
+*.toc
+*.out
+template*.pdf
+template*.dvi
+index.html

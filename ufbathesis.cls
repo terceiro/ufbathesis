@@ -376,6 +376,55 @@ grau de \@degree\ em \@majorfield.}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Cataloging Sheet (``termo de aprovação'')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\approvalsheet#1#2{%
+  \newpage
+  \begin{center}
+    {\sf\large \textbf{TERMO DE APROVA\c{C}\~{A}O}}
+
+    \vspace{2em}
+    {\sf\large\textbf{\MakeUppercase{\@author}}}
+
+    \vspace{3em}
+    \begin{minipage}{0.7\textwidth}
+      \centering
+      \sf\large\textbf{\MakeUppercase{\@title}}
+    \end{minipage}
+
+    \vspace{2em}
+    \begin{flushright}
+      \begin{minipage}{0.5\textwidth}
+        Esta tese foi julgada adequada \`{a} obten\c{c}\~{a}o do t\'{i}tulo
+        de Doutor em Ci\^{e}ncia da Computa\c{c}\~{a}o e aprovada em sua
+        forma final pelo Programa Multiinstitucional de
+        P\'{o}s-Gradua\c{c}\~{a}o em Ci\^{e}ncia da Computa\c{c}\~{a}o da
+        UFBA-UEFS-UNIFACS.
+      \end{minipage}
+    \end{flushright}
+
+    \vspace{3em}
+    \begin{center}
+      {#1}
+    \end{center}
+
+    \begin{minipage}{0.6\textwidth}
+      \centering
+      {#2}
+    \end{minipage}
+
+    \vfill
+  \end{center}
+}
+\def\comittemember#1#2{%
+  \vspace{2em}
+  \hrule
+		\vspace{0.25em}
+		{#1}\\{#2}\\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%         CLASSIC STYLE            %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \if\@style0
@@ -494,14 +543,13 @@ grau de \@degree\ em \@majorfield.}
   \if@openright\cleardoublepage\else\clearpage\fi
   \thispagestyle{empty}
   \begin{center}
-  \sf\large
-  \MakeTextUppercase{\@author}
+  \large
+  {\sf\MakeTextUppercase{\@author}}
   \vskip 65mm
-  \textbf{\MakeTextUppercase{\@title}}
+  {\sf\textbf{\MakeTextUppercase{\@title}}}
   \vskip 45mm
   \begin{flushright}
     \begin{minipage}{0.5\textwidth}
-    \quotefonti %
     Tese apresentada ao Programa Multiinstitucional de
     P\'{o}s-Gradua\c{c}\~{a}o em Ci\^{e}ncia da Computa\c{c}\~{a}o da
     Universidade Federal da Bahia, Universidade Estadual de Feira de
@@ -511,6 +559,7 @@ grau de \@degree\ em \@majorfield.}
     \end{minipage}
   \end{flushright}
   \begin{center}
+    \sf
     \vskip2\baselineskip
     {\@advisertitle:} \@adviser
     \if\@showcoadviser1
@@ -518,6 +567,7 @@ grau de \@degree\ em \@majorfield.}
     \fi
   \end{center}
   \vfill
+  \sf
   \@address\\
   \@date
   \end{center}

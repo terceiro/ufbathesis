@@ -19,16 +19,20 @@
 
 \begin{document}
 
+% Folha de rosto
+\dmccfrontpage{PMCC-Dsc-XXXX}
+% Se seu trabalho não for uma tese de doutorado do DMCC, apague a linha
+% acima e use \frontpage
+
 %%
 %% Parte pré-textual
 %%
 \frontmatter
 
-% Folha de rosto
-% Comente para ocultar
-\dmccfrontpage{PMCC-Dsc-XXXX}
+% Portada (apresentação)
+\dmccpresentationpage
 % Se seu trabalho não for uma tese de doutorado do DMCC, apague a linha
-% acima e use \frontpage
+% acima e use \presenationpage
 
 % Ficha catalográfica
 \authorcitationname{<SEU NOME EM CITAÇÕES>} % e.g. Terceiro, Antonio Soares de Azevedo
@@ -38,11 +42,15 @@
 \catalogcdd{<NUMERO CDD>} % e.g. ``CDD 20.ed. XXX.YY'' (esse número vai lhe ser dado pela biblioteca)
 \catalogingsheet
 
-% Portada (apresentação)
-% Comente para ocultar
-\dmccpresentationpage
-% Se seu trabalho não for uma tese de doutorado do DMCC, apague a linha
-% acima e use \presenationpage
+% Termo de aprovação - exemplo
+% Modifique com os membros da sua banca
+\approvalsheet{Salvador, <DIA> de <MÊS> de <ANO>}{
+  \comittemember{Profa. Dra. Professora 1}{Universidade XYZ}
+  \comittemember{Prof. Dr. Professor 2}{Universidade 123}
+  \comittemember{Profa. Dra. Professora 3}{Universidade ABC}
+  \comittemember{Prof. Dr. Professor 4}{Universidade HJKL}
+  \comittemember{Profa. Dra. Professora 5}{Universidade QWERTY}
+}
 
 % Agradecimentos
 % Se preferir, crie um arquivo à parte e o inclua via \include{}

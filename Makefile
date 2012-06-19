@@ -21,7 +21,7 @@ index.html: README.md
 	(pandoc -s -f markdown -t html $< | sed -e 's/##VERSION##/$(VERSION)/g' > $@) || ($(RM) $@; false)
 
 upload: $(TARBALL) index.html template.tex template-full.tex
-	scp index.html $^ $(UPLOAD_TO)
+	scp $^ $(UPLOAD_TO)
 
 clean:
 	$(RM) $(TARBALL)

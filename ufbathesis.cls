@@ -482,6 +482,10 @@ grau de \@degree\ em \@majorfield.}
  \if@openright\cleardoublepage\else\clearpage\fi
   \thispagestyle{empty}
   \begin{center}
+    \includegraphics[width=2cm]{ufba}
+    \includegraphics[width=2cm]{unifacs}
+    \includegraphics[width=2cm]{uefs}
+    \\
   \sf\large
   \textbf{%
   Universidade Federal da Bahia

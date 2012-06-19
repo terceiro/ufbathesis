@@ -331,6 +331,8 @@ grau de \@degree\ em \@majorfield.}
   \gdef\@authorcitationname{#1}}
 \def\advisercitationname#1{%
   \gdef\@advisercitationname{#1}}
+\def\coadvisercitationname#1{%
+  \gdef\@coadvisercitationname{#1}}
 \def\catalogtype#1{%
   \gdef\@catalogtype{#1}}
 \def\catalogtopics#1{%
@@ -343,8 +345,7 @@ grau de \@degree\ em \@majorfield.}
 
     \hspace{1cm}
     \vfill
-    Ficha catalogr\'{a}fica elaborada pela \@library, \\
-    \@institute.
+    Ficha catalogr\'{a}fica.
 
     \fbox{
       \hspace{1.75cm}
@@ -359,13 +360,22 @@ grau de \@degree\ em \@majorfield.}
         \pageref{LastPage}p.: il.
 
         \@advisertitle: \@adviser.\\
+        \if\@showcoadviser1
+          \@coadvisertitle: \@coadviser.\\
+        \fi
         \@catalogtype -- \@university, \@institute,
         \@date.
 
         \@catalogtopics.\\
         I. \@advisercitationname.
-        II. \@university. \@institute.
-        III T\'{i}tulo.
+        \if\@showcoadviser1
+          II. \@coadvisercitationname.\\
+          III. \@university. \@institute.
+          IV. T\'{i}tulo.
+        \else
+          II. \@university. \@institute.
+          III T\'{i}tulo.
+        \fi
 
         \hspace{8.5cm}\@catalogcdd
 

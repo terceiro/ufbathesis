@@ -20,8 +20,8 @@ $(TARBALL): ufbathesis.cls abnt-alf.bst
 index.html: README.md
 	(pandoc -s -f markdown -t html $< | sed -e 's/##VERSION##/$(VERSION)/g' > $@) || ($(RM) $@; false)
 
-upload: $(TARBALL) index.html template.tex template-full.tex
-	scp $^ $(UPLOAD_TO)
+upload: $(TARBALL) index.html template.tex template-full.tex .htaccess
+	rsync -avp $^ $(UPLOAD_TO)
 
 clean:
 	$(RM) $(TARBALL)
